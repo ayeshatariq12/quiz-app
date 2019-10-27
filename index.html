@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-width=1, min-width=1">
+</head>
+
+<body>
+    <div id="main">
+        <h1>How Much Do You Know Me?</h1>
+        <p> <strong>Quiz Game</strong></p>
+        <div id="All-questions">
+            <div id="one-q" class="quiz">
+                <label class="labels">
+                When is my birthday month? 
+            </label>
+                <input id="input" type="radio" name="month" for="July" onclick="julyScore()" class="july">July<br>
+                <input id="input" type="radio" name="month" for="March">March<br>
+                <input id="input" type="radio" name="month" for="April">April<br>
+                <input id="input" type="radio" name="month" for="December">December<br>
+            </div>
+            <div id="two-q" class="quiz">
+                <label class="labels">
+                 What does i likes to eat most?
+            </label>
+                <input id="input" type="radio" name="food" class="pizza" onclick="pizzaScore()">Pizza<br>
+                <input id="input" type="radio" name="food">Pasta<br>
+                <input id="input" type="radio" name="food">Burger<br>
+                <input id="input" type="radio" name="food">Biryani<br>
+            </div>
+            <div id="three-q" class="quiz">
+                <label class="labels">
+                    What is my Favorite colour?
+            </label>
+                <input id="input" type="radio" name="color">Pink<br>
+                <input id="input" type="radio" name="color" class="black" onclick="blackScore()">Black<br>
+                <input id="input" type="radio" name="color">Blue<br>
+                <input id="input" type="radio" name="color">White<br>
+            </div>
+            <div id="four-q" class="quiz">
+                <label class="labels">
+                What is more important to me?
+            </label>
+                <input id="input" type="radio" name="important" class="family" onclick="familyScore()">Family<br>
+                <input id="input" type="radio" name="important">Freinds<br>
+                <input id="input" type="radio" name="important">Money<br>
+                <input id="input" type="radio" name="important">Fame<br>
+            </div>
+            <div id="five-q" class="quiz">
+                <label class="labels">
+                 What is my Favorite Ice-cream flavour?
+            </label>
+                <input id="input" type="radio" name="flavour">Vanilla<br>
+                <input id="input" type="radio" name="flavour">Chocolate<br>
+                <input id="input" type="radio" name="flavour" class="strawberry" onclick="strawberryScore()">Strawberry<br>
+                <input id="input" type="radio" name="flavour">Pista<br>
+            </div>
+        </div>
+        <div class="button">
+            <button id="submit" onclick="check()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
